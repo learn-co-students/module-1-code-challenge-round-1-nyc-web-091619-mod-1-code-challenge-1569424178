@@ -16,9 +16,9 @@ m1 = Movie.new("Mission")
 m2 = Movie.new("Impossible")
 m3 = Movie.new("T-shirt")
 
-q1 = Queue.new(v1, m1, 3)
-q2 = Queue.new(v2, m2, 4)
-q3 = Queue.new(v3, m2, 5)
+q1 = QueueItem.new(v1, m1, 3)
+q2 = QueueItem.new(v2, m2, 4)
+q3 = QueueItem.new(v3, m2, 5)
 
 binding.pry
 

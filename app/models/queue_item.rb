@@ -4,7 +4,7 @@ class QueueItem
 
     @@all = []
 
-def initalize (viewer, movie, rating)
+def initialize(viewer, movie, rating)
     @viewer = viewer
     @movie = movie
     @rating = rating
