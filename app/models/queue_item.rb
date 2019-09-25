@@ -1,4 +1,19 @@
 class QueueItem
 
+    attr_accessor :viewer, :movie, :rating
 
-end
+    @@all = []
+
+    def initialize(viewer, movie, rating)
+        @viewer = viewer
+        @movie = movie
+        @rating = rating
+        @@all << self
+    end
+    
+    def self.all
+        @@all
+    end
+
+
+end #End of QueueItem Class
