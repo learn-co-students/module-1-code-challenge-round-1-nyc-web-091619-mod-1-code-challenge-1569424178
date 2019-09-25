@@ -23,16 +23,16 @@ class QueueItem
         end
     end
 
-    def movie
+    def movie(queue)
         Movie.all.find do |movie|
-            movie.title
+            movie.title = queue
         end
     end
 
-    def rating
-        QueueItem.all.each do |queue|
-            # queue return entire object
-            queue
+    def rating(queue)
+        QueueItem.all.each do |item|
+            # item return entire object
+            item = queue
         end
     end
 
