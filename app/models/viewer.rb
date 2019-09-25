@@ -12,4 +12,25 @@ class Viewer
     @@all
   end
   
-end
+  def queue_items
+    QueueItem.all.select do |item|
+      item.viewer == self
+    end
+  end
+
+  def queue_movies
+    queue_items.map do |item|
+      item.movie 
+    end
+  end
+
+  def add_movie_to_queue(movie)
+    QueueItem.new(self,movie)
+  end
+
+  # def rate_movie(movie,rating) 
+  #   QueueItme.rating 
+
+  # end
+
+end # end of viewer
