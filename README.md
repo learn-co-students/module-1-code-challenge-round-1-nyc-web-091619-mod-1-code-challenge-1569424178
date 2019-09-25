@@ -24,8 +24,8 @@ Implement all of the methods described below
 
 ### `Viewer`
 
-+ `Viewer.all`
-  + returns all of the viewers
+<!-- + `Viewer.all`
+  + returns all of the viewers -->
 + `Viewer#queue_items`
   + this method should return an array of `QueueItem` instances associated with this instance of `Viewer`.
 + `Viewer#queue_movies`
