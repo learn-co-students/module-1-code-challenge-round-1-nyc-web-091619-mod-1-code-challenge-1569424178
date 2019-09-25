@@ -9,18 +9,21 @@ end
 # so they will be available to test and play around with in your console
 
 # Seed data
+## Viewers
 v1 = Viewer.new("Jim")
 v2 = Viewer.new("John")
 v3 = Viewer.new("Jack")
 v4 = Viewer.new("Tim")
 v5 = Viewer.new("Tam")
 
+## Movies
 m1 = Movie.new("All is quiet")
 m2 = Movie.new("LOUD")
 m3 = Movie.new("Jack's back")
 m4 = Movie.new("Snowpocalypse")
 m5 = Movie.new("Drastic")
 
+## Instantiating queue items through viewer
 q1 = v1.add_movie_to_queue(m1)
 q2 = v1.add_movie_to_queue(m2)
 q3 = v1.add_movie_to_queue(m3)
@@ -38,6 +41,7 @@ q14 = v5.add_movie_to_queue(m5)
 q15 = v5.add_movie_to_queue(m1)
 q16 = v5.add_movie_to_queue(m2)
 
+## Rating queue items through QueueItem#Rate and through Viewer#rate_movie
 q1.rate(100)
 q5.rate(87)
 q3.rate(96)

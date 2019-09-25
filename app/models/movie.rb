@@ -7,7 +7,9 @@ class Movie
     @title = title
     self.class.all << self
   end
+  
   # Class methods
+
   def self.all
     @@all
   end
@@ -49,5 +51,4 @@ class Movie
 
     rating_avg = rating_sum/ratings.count
   end
-
-end
+end # End of class

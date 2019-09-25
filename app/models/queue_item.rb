@@ -10,15 +10,16 @@ class QueueItem
 
     @@all << self
   end
+
   # Class methods
+  
   def self.all
     @@all
   end
 
   # Instance methods
+  
   def rate(num)
     self.rating = num
   end
-
-
-end
+end # End of class

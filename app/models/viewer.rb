@@ -7,7 +7,9 @@ class Viewer
     @username = username
     self.class.all << self
   end
+
   # Class methods
+  
   def self.all
     @@all
   end
@@ -44,5 +46,4 @@ class Viewer
       QueueItem.new(self, movie, rating)
     end
   end
-  
-end
+end # End of class
