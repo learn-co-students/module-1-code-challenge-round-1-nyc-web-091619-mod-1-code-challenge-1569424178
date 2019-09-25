@@ -11,5 +11,11 @@ class Viewer
   def self.all
     @@all
   end
+
+  def queue_items
+    QueueItem.all.each do |viewer|
+      viewer.movie == self
+    end
+  end
   
 end

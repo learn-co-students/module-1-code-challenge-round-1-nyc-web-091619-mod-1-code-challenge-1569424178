@@ -12,4 +12,12 @@ class Movie
     @@all
   end
 
+  def viewers
+    Viewer.all.each do |viewer_queue|
+      viewer_queue.username == viewer_queue
+      #returns all users
+    end
+  end
+
+
 end

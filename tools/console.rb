@@ -16,9 +16,9 @@ v1 = Viewer.new("Movie Buff")
 v2 = Viewer.new("Movie Fan")
 v3 = Viewer.new("Movie Aficionado")
 
-q1 = Queue.new("Viewer A", "First Blood", 5)
-q2 = Queue.new("Viewer B", "John Wick", 5)
-q3 = Queue.new("Viewer C", "Road House", 5)
+q1 = QueueItem.new("Viewer A", "First Blood", 5)
+q2 = QueueItem.new("Viewer B", "John Wick", 5)
+q3 = QueueItem.new("Viewer C", "Road House", 5)
 
 
 binding.pry
