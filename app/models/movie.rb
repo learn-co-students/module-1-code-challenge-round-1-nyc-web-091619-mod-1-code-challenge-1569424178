@@ -7,7 +7,7 @@ class Movie
     @title = title
     self.class.all << self
   end
-  
+
   # Class methods
 
   def self.all
